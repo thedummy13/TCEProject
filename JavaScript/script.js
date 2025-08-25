@@ -13,6 +13,7 @@ async function getAIResponse(_prompt) {
 			'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
 			'Access-Control-Allow-Headers': 'Content-Type',
             'Access-Control-Allow-Credentials': 'true'
+			// changed some things
         },
         body: JSON.stringify({ _prompt })
     }).catch((error) => {
@@ -352,4 +353,5 @@ inputs.forEach(input => {
 	input.addEventListener("focus", addcl);
 	input.addEventListener("blur", remcl);
 });
+
 
